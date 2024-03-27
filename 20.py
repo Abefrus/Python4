@@ -20,19 +20,19 @@ class Parent(Person):
 class Wkg_man(Man, Worker):
     pass
  
-class Father(Man, Parent):
+class Father(Parent, Man):
     pass
 
-class Wkg_women(Woman, Worker):
+class Wkg_women(Worker,Woman):
     pass
 
-class Mother(Woman, Parent):
+class Mother(Parent,Woman):
     pass
 
 class Wkg_mother(Mother, Wkg_women):
     pass
 
-class Wkg_father(Father, Wkg_man):
+class Wkg_father(Wkg_man, Father):
     pass
 
 #* //////////////////////////////////////////////////////////////////////////////////
